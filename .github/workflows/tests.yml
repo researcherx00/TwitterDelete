@@ -18,4 +18,4 @@ jobs:
           bundler-cache: true
 
       - name: Test TwitterDelete initialisation
-        run: bundle exec twitter_delete.rb --test
+        run: bundle exec twitter_delete.rb --force
