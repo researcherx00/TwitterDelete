@@ -8,7 +8,7 @@ TwitterDelete is a small application to delete your old, unpopular tweets and li
 - Keep tweets based on age and tweaks based on retweet or favourite count
 - Delete tweets no longer exposed by Twitter API from a downloaded Twitter archive file
 
-## Usage
+## Usage 
 
 To setup locally run:
 
