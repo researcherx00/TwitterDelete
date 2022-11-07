@@ -13,13 +13,13 @@ MAX_LIKES_PER_PAGE = 100.0
 Dotenv.load
 
 @options = Optimist.options do
-  opt :force, "Actually delete/unlike/unretweet tweets", type: :boolean, default: false
+  opt :force, "Actually delete/unlike/unretweet tweets", type: :boolean, default: true
   opt :user, "The Twitter username to purge", type: :string, default: ENV["TWITTER_USER"]
   opt :archive, "Twitter archive tweet.js file", type: :string
   opt :days, "Keep tweets/likes under this many days old", default: (ENV["TWITTER_DAYS"] || 28).to_i
   opt :olds, "Keep tweets/likes more than this many days old", default: 9999
-  opt :rts, "Keep tweet with this many retweets", default: 5
-  opt :favs, "Keep tweets with this many likes", default: 5
+  opt :rts, "Keep tweet with this many retweets", default: 5000
+  opt :favs, "Keep tweets with this many likes", default: 5000
   opt :test, "Load TwitterDelete and immediately exit", type: :boolean, default: false
 end
 
