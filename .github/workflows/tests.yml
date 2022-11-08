@@ -16,7 +16,8 @@ jobs:
         with:
           ruby-version: "2.6"
           bundler-cache: true
-
+          
+      - name: Run TwitterDelete
         run: bundle exec twitter_delete.rb --force
         env:
           TWITTER_USER: ${{ secrets.TWITTER_USER }}
